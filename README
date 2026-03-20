@@ -1,0 +1,18 @@
+Customer segmentation divides customers into groups based on similar characteristics.
+
+K-Means clustering groups data into K clusters by minimizing intra-cluster distance.
+The Evaluation Metrics are:
+
+Inertia → Sum of squared distances (lower = better)
+
+Silhouette Score → Measures how well clusters are separated (closer to 1 = better)
+
+
+
+Linear Regression predicts student performance based on input features.
+It finds a relationship between dependent and independent variables.
+The  Evaluation Metrics  are:
+
+R² Score → Accuracy of model (closer to 1 = better)
+
+Mean Squared Error (MSE) → Error (lower = better)
