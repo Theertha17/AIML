@@ -1,18 +1,64 @@
-Customer segmentation divides customers into groups based on similar characteristics.
+## README
 
-K-Means clustering groups data into K clusters by minimizing intra-cluster distance.
-The Evaluation Metrics are:
+1. Customer Segmentation using K-Means Clustering
 
-Inertia → Sum of squared distances (lower = better)
+Algorithm Used:
+K-Means Clustering is an unsupervised machine learning algorithm used to group data into clusters based on similarity. It works by:
 
-Silhouette Score → Measures how well clusters are separated (closer to 1 = better)
+* Selecting *K* initial centroids
+* Assigning data points to the nearest centroid
+* Updating centroids based on cluster mean
+* Repeating until convergence
 
+Dataset Used:
+A small synthetic dataset containing:
 
+Age of customers
+Income of customers
 
-Linear Regression predicts student performance based on input features.
-It finds a relationship between dependent and independent variables.
-The  Evaluation Metrics  are:
+This dataset helps in grouping customers into segments based on similar age-income patterns.
 
-R² Score → Accuracy of model (closer to 1 = better)
+Output Metrics:
 
-Mean Squared Error (MSE) → Error (lower = better)
+* **Inertia:** Measures how internally compact the clusters are (lower is better)
+* **Silhouette Score:** Measures how well-separated the clusters are (ranges from -1 to 1; higher is better)
+
+Visualization:
+A scatter plot is generated showing customer segments with different colors.
+
+---
+
+### 2. Student Performance Prediction using Linear Regression
+
+Algorithm Used:
+Linear Regression is a supervised learning algorithm used to predict a continuous value based on input features. It finds the best-fit line using the equation:
+
+[
+y = mx + c
+]
+
+where:
+
+* (x) = input (study hours)
+* (y) = predicted output (marks)
+
+Dataset Used:
+A simple dataset with:
+
+Study Hours
+Marks
+
+This dataset models the relationship between study time and student performance.
+
+Output Metrics:
+
+* **Mean Squared Error (MSE):** Measures the average squared difference between actual and predicted values (lower is better)
+* **R² Score:** Indicates how well the model explains the variance (closer to 1 is better)
+
+---
+
+Conclusion
+
+* K-Means effectively segments customers based on similarities in data.
+* Linear Regression successfully predicts student performance with measurable accuracy.
+* Evaluation metrics help assess the quality and reliability of both models.
